@@ -72,3 +72,12 @@ for x in list2:
   list1.append(x)
 print(list1)
 
+# Palindrome Solve...
+
+listP = [1,2,3,2,1]
+list2 = listP.copy()
+list2.reverse()
+if listP == new_list :
+    print('Yse this is palindrome');
+else:
+    print('Sorry! this is note palindrome.')
