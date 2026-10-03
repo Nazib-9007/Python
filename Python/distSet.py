@@ -84,3 +84,20 @@ x = car.setdefault("model", "Bronco")
 y = car.setdefault("color", "white")
 print(x)
 print(y)
+
+# Set in python...
+this_set = {'apple', 'banana', 'cherry', True, 1, 2} # here 1 is not get in output because 1 = True so print True.
+print(this_set)
+
+#constructor..
+thisSet = set(('apple', 'banana', 'cherry'))
+print(thisSet)
+
+for x in thisSet:
+    print(x);
+
+# Join set..
+set1 = {'a', 'b', 'c'}
+set2 = {1,2,3}
+set3 = set1.union(set2)
+print(set3)
