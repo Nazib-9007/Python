@@ -77,22 +77,20 @@ print(list1)
 listP = [1,2,3,2,1]
 list2 = listP.copy()
 list2.reverse()
-if listP == new_list :
-    print('Yse this is palindrome');
+if listP == list2 :
+    print('Yes, this is a palindrome');
 else:
-    print('Sorry! this is note palindrome.');
+    print('Sorry! this is not a palindrome.');
 
 matrix = [
     ['a', 'b', 'c'],
-    ['d', 'e', 'f'],
+    ['d', 'e', 'f'], 
     ['g', 'h', 'i']
 ]
 print(matrix[2])
 print(matrix[0][0])
 print(matrix[1][1])
 print(matrix[-1][-1])
-
-slice
 print(matrix[0:2])
 print(matrix[0:])
 print(matrix[:2])
@@ -156,3 +154,27 @@ print(8 in num1)
 print(num1 == num2)
 print(num1 < num2)
 print(num1 is num2)
+
+fruit = ['apple', 'banana', 'kiwi', 'mango']
+# newList = []
+# print(fruit)
+# for x in fruit:
+#     if 'a' in x:
+#         newList.append(x);
+# print(newList)
+
+# newList = [x for x in fruit if 'a' in x]
+# print(newList)
+"""
+Syntex: 
+newlist = [expression for item in iterable if condition == True]
+"""
+
+newList = [x for x in range(10) if x < 5]
+print(newList)
+
+newList = [x.upper() for x in fruit]
+print(newList)
+
+newList = [x if x != 'banana' else 'orange' for x in fruit]
+print(newList)
